@@ -1,0 +1,263 @@
+:root {
+	--primary-text-color: #212121;
+	--primary-white-color: #ffffff;
+	--secondary-text-color: #757575;
+	--third-text-color: #000000;
+	--fourth-text-color: rgba(255, 255, 255, 0.6);
+	--acent-color: #2196f3;
+	--secondary-bgc-color: #2f303a;
+	--third-bgc-color:  #f5f4fa;
+	--btn-bgc-color: #188ce8; 
+	--primary-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+
+body {
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+	background-color: var(--primary-white-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+/*-----------------HOVER----------------*/
+
+.accent-link:hover {
+	color: var(--acent-color);
+}
+
+.hero-btn:hover {
+	background: var(--btn-bgc-color);
+	box-shadow: var(--primary-shadow);
+	border-radius: 4px;
+}
+
+.filter-btn:hover {
+	color: var(--primary-white-color);
+	background-color: var(--acent-color);
+}
+
+/*-----------------FOCUS----------------*/
+
+.accent-link:focus {
+	color: var(--acent-color);
+}
+
+.filter-btn:focus {
+	color: var(--primary-white-color)
+	background-color: var(--acent-color);
+}
+
+.btn {
+	cursor: pointer;
+}
+
+/*-----------------LOGO----------------*/
+
+.first-logo {
+	font-family: "Raleway", "sans-serif";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--acent-color);
+}
+
+.second-logo {
+	font-family: "Raleway", "sans-serif";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--primary-white-color);
+}
+
+.third-logo {
+	font-family: "Raleway", "sans-serif";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--third-text-color)
+}
+
+/*-----------------HEADER----------------*/
+
+.header-email,
+.header-tel {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color);
+}
+
+.header-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}
+
+/*-----------------HERO----------------*/
+
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+}
+
+.hero-btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--primary-white-color);
+}
+
+.hero-btn {
+	background-color: var(--acent-color)
+}
+
+.hero {
+	background-color: var(--secondary-bgc-color)
+}
+
+/*-----------------BENEFITS----------------*/
+
+.benefits-item-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--primary-text-color);
+}
+
+.benefits-item-after-title {
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--secondary-text-color);
+}
+
+/*-----------------SPECIALIZATION----------------*/
+
+.specialization-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+/*-----------------TEAM----------------*/
+
+.team {
+	background-color: var(--third-bgc-color);
+}
+
+.team-item-list {
+	background-color: var(--primary-white-color);
+}
+
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+.team-item-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+.team-item-after-title {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	color: var(--secondary-text-color);
+}
+
+/*-----------------FOOTER----------------*/
+
+.footer {
+	background: var(--secondary-bgc-color);
+}
+
+.footer-address-item-map {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--primary-white-color);
+}
+
+.footer-address-item-link {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: var(--fourth-text-color)
+}
+
+/*-----------------PORTFOLIO----------------*/
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+/*-----------------PORTFOLIO FILTER----------------*/
+
+.filter-btn {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+/*-----------------PORTFOLIO WORKS----------------*/
+.works-item-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--primary-text-color);
+}
+
+.works-item-after-title {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
+	color: var(--secondary-text-color);
+}
+
+.current-page {
+	color: var(--acent-color);
+}
