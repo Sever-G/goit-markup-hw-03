@@ -11,6 +11,20 @@
 	--primary-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	}
 
+	
+	p, h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+	}
+
+	ul {
+	margin: 0;
+	padding: 0;
+	}
+
+	img {
+		display: block;
+	}
+
 body {
 	font-size: 14px;
 	font-family: "Roboto", sans-serif;
@@ -28,6 +42,19 @@ body {
 	text-decoration: none;
 }
 
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+
+outline: 2px solid red;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;.
+}
 /*-----------------HOVER----------------*/
 
 .accent-link:hover {
@@ -88,6 +115,32 @@ body {
 
 /*-----------------HEADER----------------*/
 
+.header {
+	padding-top: 24px;
+	padding-bottom: 50px;
+}
+
+
+.header-list-nav {
+	display: flex;
+	margin-left: 93px;
+	margin-right: 331px;
+	column-gap: 50px;
+}
+
+.header-list-adress {
+	display: flex;
+	margin-left: auto;
+	column-gap: 50px;
+}
+
+.header .container {
+	display: flex;
+	align-items: center;
+}
+
+
+
 .header-email,
 .header-tel {
 	font-weight: 500;
@@ -107,6 +160,10 @@ body {
 
 /*-----------------HERO----------------*/
 
+.hero-content {
+	padding: 200px 252px 200px 252px;
+}
+
 .hero-title {
 	font-weight: 900;
 	font-size: 44px;
@@ -115,6 +172,11 @@ body {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
+
+	
+	min-width: 696px;
+	margin-bottom: 30px;
+
 }
 
 .hero-btn {
@@ -127,6 +189,10 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	color: var(--primary-white-color);
+
+	margin: auto;
+	
+
 }
 
 .hero-btn {
@@ -134,10 +200,22 @@ body {
 }
 
 .hero {
-	background-color: var(--secondary-bgc-color)
+	background-color: var(--secondary-bgc-color);
+	
 }
 
 /*-----------------BENEFITS----------------*/
+
+.benefits-item {
+	width: 270px;
+	}
+
+.benefits-list {
+	padding-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+}
 
 .benefits-item-title {
 	font-weight: 700;
@@ -145,6 +223,8 @@ body {
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--primary-text-color);
+
+	margin-bottom: 10px;
 }
 
 .benefits-item-after-title {
@@ -161,7 +241,15 @@ body {
 	line-height: 42px;
 	text-align: center;
 	color: var(--primary-text-color);
+	margin-bottom: 50px;
 }
+
+.specialization-list {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+	}
+
 
 /*-----------------TEAM----------------*/
 
@@ -171,6 +259,12 @@ body {
 
 .team-item-list {
 	background-color: var(--primary-white-color);
+	column-gap: 30px;
+}
+
+.team-list {
+	display: flex;
+	justify-content: space-between;
 }
 
 .team-title {
@@ -179,6 +273,8 @@ body {
 	line-height: 1.17;
 	text-align: center;
 	color: var(--primary-text-color);
+
+	margin-bottom: 50px;
 }
 
 .team-item-title {
@@ -187,6 +283,11 @@ body {
 	line-height: 1.19;
 	text-align: center;
 	color: var(--primary-text-color);
+
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .team-item-after-title {
@@ -194,12 +295,22 @@ body {
 	line-height: 1.19;
 	text-align: center;
 	color: var(--secondary-text-color);
+
+	padding-bottom: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 /*-----------------FOOTER----------------*/
 
 .footer {
 	background: var(--secondary-bgc-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer-adress-list {
+	margin-top: 20px;
 }
 
 .footer-address-item-map {
@@ -214,6 +325,10 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	color: var(--fourth-text-color)
+}
+
+.footer-address-item:not (:last-child) {
+	margin-bottom: 9px;
 }
 
 /*-----------------PORTFOLIO----------------*/
@@ -240,15 +355,42 @@ body {
 	line-height: 1.63;
 	text-align: center;
 	color: var(--primary-text-color);
+	border-radius: 4px;
+	border: transparent;
+}
+
+.filter-list {
+	display: flex;
+	column-gap: 8px;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
 /*-----------------PORTFOLIO WORKS----------------*/
+.filter {
+	padding-top: 0;
+}
+
+.works-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: space-between;
+}
+
+.works-item-list {
+	width: calc((100-60px)/3);
+}
+
 .works-item-title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--primary-text-color);
+	margin-top: 20px;
+	margin-bottom: 4px;
+
 }
 
 .works-item-after-title {
